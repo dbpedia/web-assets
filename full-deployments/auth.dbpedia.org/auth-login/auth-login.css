@@ -31,7 +31,7 @@ div.kc-logo-text {
 }
 
 div.kc-logo-text::after {
-  content: 'KEY-CLOAK';
+  content: ''; /*subcaption like text for logo, was intended to say sth. like Unified Account or just account, but placement looks bad on mobile / slim version */
   position: relative;
   margin-left:200px;
   transform: translateY(-50%);

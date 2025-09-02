@@ -67,7 +67,7 @@
 
     var title = document.createElement('h2');
     title.className = 'card-pf-title';
-    title.textContent = 'A DBpedia Account gives you access to:';
+    title.textContent = 'Register or login below with your free DBpedia Account to get access to:';
 
     var list = document.createElement('ul');
     list.className = 'list-login';
@@ -95,7 +95,7 @@
 
     list.innerHTML = '';
     list.appendChild(liEntry('DBpedia Databus', 'databus.dbpedia.org', 'https://databus.dbpedia.org/'));
-    list.appendChild(liEntry('Databus Vaults', 'vaults', 'https://dbpedia.org/page/Vault'));
+    list.appendChild(liEntry('Databus Vaults', 'data.dbpedia.io', 'https://data.dbpedia.io/'));
     list.appendChild(liEntry('DBpedia Forum', 'forum.dbpedia.org', 'https://forum.dbpedia.org/'));
 
     body.appendChild(title);
