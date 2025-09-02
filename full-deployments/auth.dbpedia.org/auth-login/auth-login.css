@@ -128,3 +128,9 @@ ul.list-login li::before {
   background: #edc338;
   border-radius: 50%; /* macht’s rund */
 }
+
+@media (max-width: 767px) {
+  .login-pf-page .card-pf {
+    padding-top: 16px !important
+    }
+}
