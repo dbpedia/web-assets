@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/auth-static/page-customs/assets/fonts/roboto/roboto-v20-latin-regular.woff2') format('woff2'),
+       url('/auth-static/page-customs/assets/fonts/roboto/roboto-v20-latin-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/auth-static/page-customs/assets/fonts/roboto/roboto-v20-latin-700.woff2') format('woff2'),
+       url('/auth-static/page-customs/assets/fonts/roboto/roboto-v20-latin-700.woff') format('woff');
+}
+body {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight:300;
+}
+
+.login-pf body {
+background-image: url("/auth-static/page-customs/assets/images/backgrounds/dbpedia-background-fallback.jpg") !important;}
+div.kc-logo-text {
+  background-image: url("/auth-static/page-customs/assets/images/logos/dbpedia-org-logo.svg") !important;
+  background-repeat: no-repeat !important;
+  background-position: right center !important;
+  background-size: contain !important;
+  height: 100px !important;
+  position: relative;
+  font-size: 0; /* versteckt ggf. alten Text */
+}
+
+div.kc-logo-text::after {
+  content: 'KEY-CLOAK';
+  position: relative;
+  margin-left:200px;
+  transform: translateY(-50%);
+  margin-top:95px !important;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  white-space: nowrap;
+  display:inline-block;
+}
+@media(max-width:768px) {
+  div.kc-logo-text::after {
+    margin-top:50px !important;
+  }
+}
+
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  pointer-events: none;
+  background: transparent;
+}
+
+.login-pf-page .card-pf {
+	color:#FFF;
+	box-shadow: 0 0 35px rgba(0, 42, 67, 0.5) !important;
+	border:none !important;
+	background-color: #002a43;
+ 	 background-image: url(../page-customs/assets/images/backgrounds/20200911_DBpedia-Fractal-Blog.svg);
+  	background-size: cover;
+  	background-blend-mode: soft-light;
+	}
+.login-pf-page .card-pf h1,
+.login-pf-page .card-pf h2 {
+	color:#FFF;
+	}
+#kc-login,
+a.pf-c-button {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  line-height: 23.4px;
+  color: rgb(0, 42, 67) !important;
+  background-color: rgb(237, 195, 56) !important;
+  border: none;
+  border-radius: 0;
+  padding: 16px 25px 14px 25px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition: color 0.3s ease-in-out;
+}
+#kc-login:hover,
+a.pf-c-button:hover {
+  background-color: rgb(220, 180, 50) !important;
+  color: rgb(255, 255, 255)  !important;
+}
+#kc-info-wrapper {
+	background-color:rgb(16, 64, 87) !important;
+	color:#FFF !important;
+}
+ul.list-login {
+  list-style: none;   /* Standard-Bullets deaktivieren */
+  margin: 0;
+  padding: 0;
+}
+
+ul.list-login li {
+  position: relative;
+  padding-left: 1.2em; /* Platz für den Punkt */
+  margin-bottom: 0.4em;
+}
+
+ul.list-login li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;       /* vertikal zentrieren */
+  width: 6px;
+  height: 6px;
+  background: #edc338;
+  border-radius: 50%; /* macht’s rund */
+}
